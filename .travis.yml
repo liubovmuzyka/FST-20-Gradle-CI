@@ -3,8 +3,7 @@ language: java
 
 Notifications:
 email:
-- s4muliub@uni-trier.de
 recipients:
-- s4muliub@uni-trier.de
+- liubov.muzyka@gmail.com
 on_success: always
 on_failure: always
