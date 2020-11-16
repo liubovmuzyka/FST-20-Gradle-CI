@@ -6,6 +6,15 @@ plugins {
     id "org.sonarqube" version "3.0"
 }
 
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "liubovmuzyka_FST-20-Gradle-CI"
+    property "sonar.organization", "liubovmuzyka"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 mainClassName = 'de.unitrier.st.core.Main'
 
 javafx {
@@ -18,14 +27,6 @@ task installWrapper(type: Wrapper) {
     gradleVersion = '6.7'
 }
 
-
-sonarqube {
-  properties {
-    property "sonar.projectKey", "liubovmuzyka_FST-20-Gradle-CI"
-    property "sonar.organization", "liubovmuzyka"
-    property "sonar.host.url", "https://sonarcloud.io"
-  }
-}
 
 task buildCore(dependsOn: 'copyJson') {
     println "build core"
