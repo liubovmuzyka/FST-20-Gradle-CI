@@ -21,7 +21,7 @@ Notifications:
 before_install:
   - gradle installWrapper
 
-language: java
+language: python
 
 git:
   quiet: false
