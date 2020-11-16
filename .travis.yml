@@ -1,6 +1,6 @@
 job:
   include:
-    - jdk: openjdk11
+    - jdk: openjdk11;
       os: linux
     - jdk: openjdk8
       os: osx
@@ -21,7 +21,7 @@ Notifications:
 before_install:
   - gradle installWrapper
 
-language: python
+language: java
 
 git:
   quiet: false
