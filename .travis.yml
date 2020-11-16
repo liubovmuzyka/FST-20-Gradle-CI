@@ -1,1 +1,9 @@
 language: java
+
+
+Notifications:
+email:
+recipients:
+- s4muliub@uni-trier.de
+on_success: always
+on_failure: always
