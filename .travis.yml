@@ -16,5 +16,3 @@ recipients:
 on_success: always
 on_failure: always
 
-before_install:
-- gradle installWrapper
