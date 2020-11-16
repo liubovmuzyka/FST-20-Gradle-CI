@@ -1,9 +1,9 @@
 job:
   include:
     - jdk: openjdk11
-      os: 
+      os: linux
     - jdk: openjdk8
-      os::
+      os: osx
   allow_failures:
     - os: osx
 
