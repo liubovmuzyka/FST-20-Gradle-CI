@@ -2,7 +2,7 @@ name: CI_build
 on:
   push:
     branches:
-      - liubov
+      - master
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
