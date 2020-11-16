@@ -1,5 +1,13 @@
 language: java
 
+job:
+include:
+- jdk: openjdk11
+os: linux
+- jdk: openjdk8
+os: osx
+allow_failures:
+- os: osx
 
 Notifications:
 email:
@@ -7,3 +15,6 @@ recipients:
 - liubov.muzyka@gmail.com
 on_success: always
 on_failure: always
+
+before_install:
+- gradle installWrapper
